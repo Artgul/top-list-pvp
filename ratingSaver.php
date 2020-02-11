@@ -18,7 +18,6 @@
         $filename = '/' . $year . '.csv';
         $data = $nicks . "\n";
         $data .= $scores . "\n";
-        echo($data);
     echo "writing data to a file\n";
         $fp = fopen(__DIR__ . $filename, "a"); // Открываем файл в режиме дозаписи
         fwrite($fp, $data);
